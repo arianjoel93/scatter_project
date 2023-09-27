@@ -1,0 +1,83 @@
+:root {
+    --primary: #336666;
+    --fuente-principal: 'Karla', sans-serif;
+    --light: #edf1f2;
+}
+
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+body {
+    font-size: 16px;
+    font-family: var(--fuente-principal);
+    line-height: 1.5;
+    color: rgb(32, 32, 43);
+    background: var(--light) !important;
+    margin: 0 !important;
+    -webkit-font-smoothing: antialiased;
+    transition: 0.2s ease all;
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4 {
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+
+    }
+
+    &::-webkit-scrollbar {
+        width: 10px !important;
+        /* Ancho de la barra */
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+        /* Color de fondo de la barra */
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 40px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.Container {
+    width: min(95%, 144rem) !important;
+    margin: 0px auto !important;
+    padding: 20px 0;
+    position: relative;
+}

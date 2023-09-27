@@ -1,0 +1,98 @@
+.containerMethods {
+    padding: 20px 0 100px 0px;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    gap: 30px;
+
+    .methods_Img {
+        @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            place-items: start;
+        }
+
+        display: grid;
+        grid-template-columns: 40% 60%;
+        gap: 20px;
+        place-items: center;
+
+        .listMethods {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .method {
+                display: flex;
+                gap: 5px;
+
+                .icon {
+                    width: 24px !important;
+                    height: 24px !important;
+                }
+
+                p {
+                    font-size: 16px;
+                    font-style: italic;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        img {
+            @media (max-width: 520px) {
+                width: 350px;
+                height: 350px;
+            }
+
+            width: 500px;
+            height: 500px;
+            box-shadow: 3px 7px 5px -4px rgba(97, 97, 97, 0.54);
+            border-radius: 10px;
+        }
+    }
+
+    .subClass {
+        margin-left: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+
+        li {
+            font-size: 14px;
+            color: rgb(31, 31, 31);
+
+        }
+    }
+
+
+    .buttons {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 50px;
+        gap: 20px;
+        flex-wrap: wrap;
+
+
+        .request {
+            @media (max-width: 480px) {
+                width: 100%;
+            }
+
+            width: 250px;
+        }
+
+        .magenta {
+            background: rgb(133, 0, 145);
+        }
+
+        .blue {
+            background: rgb(25, 21, 145);
+        }
+    }
+}

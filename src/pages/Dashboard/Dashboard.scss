@@ -1,0 +1,14 @@
+.Dashboard {
+    display: grid;
+    place-items: center;
+    gap: 30px;
+    width: 100%;
+
+    .optionsRequest {
+        display: flex;
+        width: 100%;
+        gap: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

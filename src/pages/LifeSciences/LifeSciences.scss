@@ -1,0 +1,23 @@
+.LifeSciences {
+
+    .startText {
+        @media (max-width: 1024px) {
+            width: 100%;
+        }
+
+        width: 50%;
+
+        h1 {
+            font-size: 34px;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 34px;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+    }
+
+}

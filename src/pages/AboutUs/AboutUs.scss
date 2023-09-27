@@ -1,0 +1,68 @@
+.AboutUs {
+    padding: 30px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    .title {
+        color: rgb(44, 44, 44);
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .section_1 {
+        @media (max-width: 520px) {
+            flex-direction: column;
+            display: flex;
+            gap: 30px;
+        }
+        max-width: 820px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+
+        .imageMain {
+            @media (max-width: 520px) {
+                justify-content: center;
+            }
+            width: 100%;
+            display: flex;
+            justify-content: end;
+        }
+
+        .cardAbout {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 3px 7px 5px -4px rgba(97, 97, 97, 0.54);
+        }
+    }
+
+    fieldset {
+        width: 80%;
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+        margin: 0 auto;
+
+        legend {
+            color: rgb(44, 44, 44);
+            text-align: center;
+            margin-top: 50px;
+            font-size: 30px;
+            padding: 0 30px;
+        }
+    }
+
+    .section {
+
+        .cardAbout {
+            background: rgb(43, 43, 43);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 3px 7px 5px -4px rgba(97, 97, 97, 0.54);
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.GeneralButton{
+    width: 120px;
+    height: 40px;
+    border: none;
+    background: linear-gradient(to left, #005100, rgb(0, 104, 0));
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 3px 7px 5px -4px rgba(97, 97, 97, 0.54);
+
+    &:hover{
+        background: linear-gradient(to right, rgb(0, 81, 0), rgb(0, 81, 0));
+        letter-spacing: 1.1px;
+        transition: letter-spacing 0.3s linear;
+    }
+}

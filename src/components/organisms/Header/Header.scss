@@ -1,0 +1,88 @@
+.Header {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    box-shadow: 0px 3px 5px -1px rgba(56, 56, 56, 0.676);
+
+    .c_main {
+        @media (max-width: 1024px) {
+            padding: 0 20px;
+        }
+
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 20px 0 100px;
+        margin: 0 auto;
+        align-items: center;
+        height: 40px;
+
+        .logos {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+
+            .logo1 {
+                width: 30px;
+                height: 30px;
+            }
+
+            img {
+                width: 55px;
+                height: 40px;
+            }
+        }
+
+        .right {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+
+            .navBar {
+                @media (max-width: 1024px) {
+                    gap: 0;
+                }
+
+                display: flex;
+                align-items: center;
+
+                .option {
+                    width: 120px;
+                    display: grid;
+                    place-items: center;
+
+                    a {
+                        font-size: 16px;
+                        color: #006800;
+
+                        &:hover {
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+
+            .buttons_container {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .logIn{
+                    height: 30px !important;
+                }
+                .signIn{
+                    background: transparent;
+                    border: none;
+                    width: 80px;
+                    cursor: pointer;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #006800;
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+}

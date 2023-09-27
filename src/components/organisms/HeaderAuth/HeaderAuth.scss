@@ -1,0 +1,176 @@
+.HeaderAuth {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    box-shadow: 0px 3px 5px -1px rgba(56, 56, 56, 0.676);
+
+    .c_main {
+        @media (max-width: 1024px) {
+            padding: 0 20px;
+        }
+
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 20px 0 100px;
+        margin: 0 auto;
+        align-items: center;
+        height: 40px;
+
+        .logos {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+
+            .logo1 {
+                width: 30px;
+                height: 30px;
+            }
+
+            img {
+                width: 55px;
+                height: 40px;
+            }
+        }
+
+        .right {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+
+            .navBar {
+                @media (max-width: 1024px) {
+                    gap: 0;
+                }
+
+                display: flex;
+                align-items: center;
+
+                .option {
+                    width: 80px;
+                    display: grid;
+                    place-items: center;
+
+                    a {
+                        font-size: 16px;
+                        color: #006800;
+
+                        &:hover {
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+
+            .buttons_container {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .logIn {
+                    height: 30px !important;
+                }
+
+                .signIn {
+                    background: transparent;
+                    border: none;
+                    width: 80px;
+                    cursor: pointer;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #006800;
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+
+    .p-avatar {
+        cursor: pointer;
+        background: linear-gradient(to top, #008a00, #006800);
+    }
+
+    .p-avatar.p-avatar-xl {
+        width: 3rem;
+        height: 3rem;
+        font-size: 18px;
+        font-weight: 700;
+        color: white;
+    }
+
+}
+
+.p-overlaypanel-content {
+    padding: 0 !important;
+    width: 150px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .optionProfile {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        height: 40px;
+
+        p {
+            font-size: 14px;
+        }
+
+        &:hover {
+            background: rgba(128, 128, 128, 0.224);
+        }
+    }
+
+    .button {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .top {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+}
+.Confirmation{
+    width: 300px !important;
+    height: 200px !important;
+
+    .p-dialog-header{
+        padding: 2.5rem;
+
+        .p-dialog-title{
+            font-size: 18px !important;
+        }
+    }
+    .p-confirm-dialog-icon {
+        font-size: 3rem !important;
+    }
+    .p-confirm-dialog-message {
+        font-size: 14px !important;
+    }
+    .p-dialog .p-dialog-footer button {
+        width: 60px !important;
+        height: 40px !important;
+    }
+
+    .p-button {
+        background-color: #006800 !important;
+    }
+    .p-confirm-dialog-reject{
+        background-color: transparent !important;
+    }
+    .p-button:enabled:active, .p-button:not(button):not(a):not(.p-disabled):active {
+        background: #006800 !important;
+        color: #ffffff;
+        border: none !important;
+    }
+    .p-button:focus {
+        box-shadow: none !important;
+    }
+}
